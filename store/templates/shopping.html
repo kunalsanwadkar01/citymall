@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{% static 'css/shoppingstyle.css' %}">
+    
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><i class="fas fa-shopping-cart"></i>&nbsp;City Mall</a>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#speciality">Stores</a>
+        <a href="#popular">Sale</a>
+        <!-- <a href="#gallery">gallery</a> -->
+        
+        {% comment %} <a href="#order">Reach Us</a> {% endcomment %}
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+<div class="container-fluid slidefood">
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Treat yourself.</h3>
+        <p>You can shop for women's clothing and men's fashion from brands such as Lifestyle, Levi's and more.</p>
+        <a href="{% url 'store' %}" class="btn">order now</a>
+    </div>
+
+    <div class="image">
+        <img src="{% static 'fdimages/men.png' %}" alt="">
+    </div>
+
+</section>
+</div>
+
+<div class="container-fluid slidefood">
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Treat yourself.</h3>
+        <p>You can shop for women's clothing and men's fashion from brands such as Lifestyle, Levi's and more.</p>
+        <a href="{% url 'store' %}" class="btn">order now</a>
+    </div>
+
+    <div class="image">
+        <img src="{% static 'fdimages/women.png' %}" alt="">
+    </div>
+
+</section>
+</div>
+
+<!-- home section ends -->
+
+<!-- speciality section starts  -->
+
+<!-- <section class="speciality" id="speciality">
+
+    <h1 class="heading"> our <span>speciality</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img class="image" src="images/s-img-1.jpg" alt="">
+            <div class="content">
+                <img src="images/s-1.png" alt="">
+                <h3>tasty burger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/s-img-2.jpg" alt="">
+            <div class="content">
+                <img src="images/s-2.png" alt="">
+                <h3>tasty pizza</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/s-img-3.jpg" alt="">
+            <div class="content">
+                <img src="images/s-3.png" alt="">
+                <h3>cold ice-cream</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/s-img-4.jpg" alt="">
+            <div class="content">
+                <img src="images/s-4.png" alt="">
+                <h3>cold drinks</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/s-img-5.jpg" alt="">
+            <div class="content">
+                <img src="images/s-5.png" alt="">
+                <h3>tasty sweets</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/s-img-6.jpg" alt="">
+            <div class="content">
+                <img src="images/s-6.png" alt="">
+                <h3>healty breakfast</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section> -->
+
+<!-- speciality section ends -->
+
+<!-- popular section starts  -->
+
+<section class="popular" id="speciality">
+
+    <h1 class="heading"> Our <span>Partners</span> </h1>
+
+    <div class="box-container">
+
+        
+            <!-- <span class="price"> $5 - $20 </span> -->
+            <!-- <a href="https://www.mcdelivery.co.in/home" target="blank"><img src="images/pantaloons.png" alt=""></a> -->
+            
+            <!-- <a href="#" class="btn">order now</a> -->
+            <!-- <a href="https://www.mcdelivery.co.in/home" target="blank"><img src="images/pepe.png" alt=""></a>
+            <a href="https://www.mcdelivery.co.in/home" target="blank"><img src="images/allen-solly.png" alt=""></a>
+            <a href="https://www.mcdelivery.co.in/home" target="blank"><img src="images/peter _england.png" alt=""></a>-->
+
+            <a href="https://shop4reebok.com/?utm_source=adwords&utm_medium=Search_CPC&utm_campaign=Reebok_Pure_Brand_Exact&utm_term=reebok&utm_adgroup=&utm_network=Search_g&utm_matchtype=e&utm_device=c&utm_placement=&utm_content=547971138880&utm_location=9301674&utm_campaignid=10985441210&gclid=Cj0KCQjwkbuKBhDRARIsAALysV4m8yqugS2N9duC5CrjZapEUwxM6ViMae7lWqyq7fksGGrAYAYu5DQaAi9qEALw_wcB" target="blank"><img src="{% static 'fdimages/reebok.png' %}" alt=""></a> 
+            <a href="https://www.calvinklein.us/en" target="blank"><img src="{% static 'fdimages/Calvin-Klein.png' %}" alt=""></a>
+            <a href="https://www.adidas.co.in/" target="blank"><img src="{% static 'fdimages/adidas.png' %}" alt=""></a>
+            <a href="https://arrow.nnnow.com/" target="blank"><img src="{% static 'fdimages/arrow.png' %}" alt=""></a>
+            <a href="https://www2.hm.com/en_in/index.html" target="blank"><img src="{% static 'fdimages/handm.png' %}" alt=""></a>
+            <a href="https://www.jackjones.in/jackjones-flat-30-off?gclid=Cj0KCQjwkbuKBhDRARIsAALysV63TWDD9pStEITlc92-9kZj_xPod4hUKTUPMqd3T7VQfaR1G2_iZlEaAgFOEALw_wcB" target="blank"><img src="{% static 'fdimages/jackandjones.jpg' %}" alt=""></a>
+            <a href="https://www.jockey.in/?utm_source=Microsite&utm_medium=MenuTab&utm_campaign=BrasCampaign" target="blank"><img src="{% static 'fdimages/jockey.png' %}" alt=""></a>
+            <a href="https://www.gap.com/" target="blank"><img src="{% static 'fdimages/gap.png' %}" alt=""></a>
+            <a href="https://www.levi.in/eoss?utm_channel=affiliate&utm_medium=Sokrati&utm_campaign=sok_Pokkt_1204_&utm_content=homepage&click_id=614f9f9fd0a76500018b6629&utm_term=" target="blank"><img src="{% static 'fdimages/levis.png' %}" alt=""></a>
+            <a href="https://www.louisphilippe.com/" target="blank"><img src="{% static 'fdimages/louis.png' %}" alt=""></a>
+            <a href="https://www.lifestylestores.com/in/en/search?q=&gclid=Cj0KCQjwkbuKBhDRARIsAALysV72paD76WoyH3LGYhkKF7HkRuiYrEAWGHybaypnoxNoppLDdqq4SQsaAja_EALw_wcB" target="blank"><img src="{% static 'fdimages/lifestyle.png' %}" alt=""></a>
+            <a href="https://www.nike.com/in/?cp=76060516106_aff_|P%2F%2FYg3UM8Yg|&ranMID=41134&ranEAID=P%2F%2FYg3UM8Yg&ranSiteID=P__Yg3UM8Yg-fkP8o1HFIU09enKDA0y0LQ" target="blank"><img src="{% static 'fdimages/nike.jpg' %}" alt=""></a>
+            <a href="https://in.puma.com/in/en/outlet/shop-all-outlet?utm_medium=AFF&utm_source=OTH-CPO&utm_aud=MULT&utm_obj=OLC&utm_campaign=AFF_OTH_CPO_MULT_OLC_ADZi_1303&gclid=Cj0KCQjwkbuKBhDRARIsAALysV7AFMdvYOd5ri1ljvDVV98MOMy0mdOEoHsgpeF-PobHnCDIFfMqNeAaAqXSEALw_wcB" target="blank"><img src="{% static 'fdimages/puma.jpg' %}" alt=""></a>
+            <a href="https://www.nykaa.com/offers.html?gclid=Cj0KCQjwkbuKBhDRARIsAALysV7QMGvIxcep1j3tn-9Ijq1dXyBVk3I5XCfqxcCbU6fPkEo3HKzAzOsaAidJEALw_wcB&root=nav_1&ef_id=Cj0KCQjwkbuKBhDRARIsAALysV7QMGvIxcep1j3tn-9Ijq1dXyBVk3I5XCfqxcCbU6fPkEo3HKzAzOsaAidJEALw_wcB:G:s&s_kwcid=AL!599!3!421089206635!e!!g!!nykaa&utm_source=GooglePaid&utm_medium=Search&utm_campaign=Search_Nykaa_New_Users" target="blank"><img src="{% static 'fdimages/nykaa.png' %}" alt=""></a>
+            <a href="https://www.maxfashion.in/in/en/search?q=&gclid=Cj0KCQjwkbuKBhDRARIsAALysV4dfNgCx7jKPCFanPvxZjubTiMZknMsdp710KKEhmcsIzc4wp7GwEIaAl7QEALw_wcB" target="blank"><img src="{% static 'fdimages/max.png' %}" alt=""></a>
+
+
+        
+        
+       <!-- <div class="box">
+            
+            <a href="https://www.burgerking.in/" target="blank"><img src="images/burgerking.png" alt=""></a>
+            <h3>Burger King</h3>
+            
+            
+        </div>
+        <div class="box">
+            
+            <a href="https://www.starbucks.in/" target="blank"><img src="images/starbucks.png" alt=""></a>
+            <h3>Starbucks</h3>
+            
+        </div>
+        <div class="box">
+            
+            <a href="https://www.pizzahut.co.in/?utm_source=google&utm_medium=cpc&utm_campaign=iP_Sapphire_Search_PR_Brand_Exact&utm_content=Brand&gclid=Cj0KCQjwkbuKBhDRARIsAALysV7o1nKBDcWt-SB8--VnaqOHMFKYBOXkq3zrJECcsDUXn6n4fGi9ZvsaArp6EALw_wcB" target="blank"><img src="images/pizzahut.png"  alt=""></a>
+            <h3>Pizza Hut</h3>
+            
+        </div>
+        <div class="box">
+            
+            <a href="https://www.naturalicecreams.in/" target="_blank"><img src="images/naturals.png" alt=""></a>
+            <h3>Naturals</h3>
+            
+        </div>
+        <div class="box">
+            
+            <a href="https://www.subway.com/en-IN" target="_blank"><img src="images/subway.png" alt=""></a>
+            <h3>Subway</h3>
+            
+        </div>
+        <div class="box">
+            
+            <a href="https://www.dominos.co.in/" target="_blank"><img src="images/dominoz.png" alt=""></a>
+            <h3>Domino's</h3>
+            
+        </div>
+        <div class="box">
+            
+            <a href="https://www.theirishhouse.in/" target="_blank"><img src="images/ccd.png" alt=""></a>
+            <h3>Cafe Coffee Day</h3>
+            
+        </div> -->
+
+    </div>
+
+</section>
+
+<!-- popular section ends -->
+
+<!-- steps section starts  -->
+
+<!-- <div class="step-container">
+
+    <h1 class="heading">how it <span>works</span></h1>
+
+    <section class="steps">
+
+        <div class="box">
+            <img src="images/step-1.jpg" alt="">
+            <h3>choose your favorite food</h3>
+        </div>
+        <div class="box">
+            <img src="images/step-2.jpg" alt="">
+            <h3>free and fast delivery</h3>
+        </div>
+        <div class="box">
+            <img src="images/step-3.jpg" alt="">
+            <h3>easy payments methods</h3>
+        </div>
+        <div class="box">
+            <img src="images/step-4.jpg" alt="">
+            <h3>and finally, enjoy your food</h3>
+        </div>
+    
+    </section>
+
+</div> -->
+
+<!-- steps section ends -->
+
+<!-- gallery section starts  -->
+<!-- 
+ <section class="gallery" id="gallery">
+
+    <h1 class="heading"> our food <span> gallery </span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/g-1.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-2.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-3.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-4.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-5.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-6.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-7.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-8.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-9.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>  -->
+
+<!-- gallery section ends -->
+
+
+
+<!-- order section starts  -->
+<style>
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.slidegallery {
+    box-shadow: #717171;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="container-fluid slidegallery" id="popular">
+
+<div class="mySlides fade mySlidesx">
+  <div class="numbertext">1 / 3</div>
+  <img src="{% static 'fdimages/slide 2.jpg' %}" style="width:100%">
+  <div class="text">Buy 1 Get 1 Free <span>Only At 399/-</span></div>
+</div>
+
+<div class="mySlides fade mySlidesx">
+  <div class="numbertext">2 / 3</div>
+  <img src="{% static 'fdimages/slide 3.jpg' %}" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade mySlidesx">
+  <div class="numbertext">3 / 3</div>
+  <img src="{% static 'fdimages/slide 4.jpg' %}" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+
+
+
+</body>
+<!--
+<section class="order" id="order">
+
+    <h1 class="heading"> <span>Reach</span> Us </h1>
+
+    <div class="row">
+        
+        <div class="image">
+            <img src="{% static 'fdimages/reach-bg.jfif' %}" alt="">
+        </div>
+
+        <form action="submit" method="POST" id="contactform" class="form">
+            {% csrf_token %}
+
+            <div class="inputBox">
+                <input type="text" placeholder=" first name" id="fname" name="fname">
+                <input type="text" placeholder="last name" id="lname" name="lname">
+            </div>
+
+            <div class="inputBox">
+                <input type="number" placeholder="contact number" id="contact" name="contact">
+                <input type="email" placeholder="email" id="emailid" name="emailid">
+            </div>
+
+            {% comment %} <textarea placeholder="message" name="" id="message" cols="30" rows="10"></textarea> {% endcomment %}
+
+            <input type="submit" value="submit" class="btn" id="submit">
+
+        </form>
+
+    </div>
+
+</section>
+-->
+
+
+<!-- order section ends -->
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <!-- <div class="share">
+        <a href="#" class="btn">facebook</a>
+        <a href="#" class="btn">twitter</a>
+        <a href="#" class="btn">instagram</a>
+        <a href="#" class="btn">pinterest</a>
+        <a href="#" class="btn">linkedin</a>
+    </div> -->
+
+    <h1 class="credit"> All Images and Media used are for <span> Fair Use Only ! </span> <br> For Educational Purpose Only </h1>
+    <a href="{% url 'addproduct' %}">For Admin use only</a>
+</section>
+
+<!-- scroll top button  -->
+<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+<!-- loader  -->
+<div class="loader-container">
+    <img src="{% static 'fdimages/loader.gif' %}" alt="">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script type="text/javascript" src="{% static 'js/shoppingscript.js' %}"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>  
+
+
+</body>
+</html>

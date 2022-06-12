@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+/* body */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif; 
+}
+
+
+/* header  */
+
+
+
+
+
+
+
+.booknowbtn  {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    backface-visibility: hidden;
+    border: 0.3rem solid transparent;
+    border-radius: 3rem;
+  }
+  .bn38 {
+    border-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+    
+  .bn38:hover {
+    background-color: #60605e93;
+  }
+
+
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 1000;
+
+}
+
+header .logo {
+    max-width: 120px;
+}
+
+header .toggle {
+    max-width: 60px;
+    cursor: pointer;
+}
+
+header .logo img,
+header .toggle img {
+    max-width: 100%;
+
+}
+
+
+
+/* 4dx container */
+
+.fourdx{
+    width: 100%;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+
+/* footer */
+
+/* footer */
+
+.footermovie{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient( #000000, #100736b7);
+    color: #fff;
+    padding: 40px 0 30px;
+    
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.ourpartners{
+    color: #fff;
+
+}
+
+.movierow{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 20px;
+}
+
+.footerlogomovie{
+    width: 100px;
+    margin-bottom: 30px;
+
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+
+.social-menu ul{
+    position: relative;
+    /* top: 50%;
+    left: 50%; */
+    /* padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%); */
+    display: flex;
+}
+
+.social-menu ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #0077b5;
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: #000;
+}
+
+
+/* cards section */
+
+/* cards container */
+
+.cardscontainer{
+    position: relative;
+    min-height: 60vh;
+    width: 100%;
+    background:black;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card1{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    /* background: linear-gradient( silver, #100736); */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.card1 .circle{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card1 .circle::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(160, 160, 204);
+    clip-path: circle(80px at center);
+    transition: 0.5s;
+
+}
+
+.card1:hover .circle::before{
+    background: rgb(77, 23, 255);
+    clip-path: circle(300px at center);
+}
+
+.card1 img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    height: 180px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.card1:hover img{
+    left: 82%;
+    height: 250px;
+}
+
+.card1 .content{
+    position: relative;
+    width: 50%;
+    padding: 18px 18px 18px 25px;
+    font-size: 13px;
+    transition: 0.5s;
+    left: 20%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card1:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.card1 .content h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.card1 .content p{
+    color: #fff;
+
+}
+
+.card1 .content a{
+    position: relative;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    color: #111;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/* @media (max-width: 991px)
+{
+    .card{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+
+    }
+
+    
+} */
+
+
+/* loader */
+
+.loader-container{
+    position: fixed;
+    top:0; left:0;
+    z-index: 10000;
+    background:#0a2d35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    width:100%;
+  }
+  
+  .loader-container.fade-out{
+    top:-120%;
+  }
+
+  .loader-container img{
+      height: 300px;
+      width: 300px;
+  }

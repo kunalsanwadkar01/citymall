@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+{% comment %} <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> {% endcomment %}
+<div class="row">
+    {% for product in products %}
+    <div class="col-lg-4">
+        <img class="thumbnail" src="{{product.imageURL}}" style="max-width:330px; max-height:180px;">
+        <div class="box-element product my-2">
+            
+            <h6><strong>{{product.name}}</strong></h6>
+            <hr>
+
+            <button data-product="{{product.id}}" data-action="add"  class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+            {% comment %} <a class="btn btn-outline-success" href="#">View</a> {% endcomment %}
+            <h4 style="display: inline-block; float: right; "><strong>₹ {{product.price|floatformat:2}}</strong></h4>
+            <hr>
+
+        </div>
+    </div>
+    
+    {% endfor %}    
+
+    
+</div>
+
+{% endblock content %}
+

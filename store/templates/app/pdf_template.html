@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <h1 style="text-align: center; font-size: 30px;">CITY MALL</h1>
+    <hr>
+    <p>Name : </p>
+
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        {% for item in items %}
+
+        
+        <tr>
+            <td>{{item.product.name}}</td>
+            <td> x {{item.quantity}}</td>
+            <td>{{item.product.price}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h5>Items:   {{order.get_cart_items}}</h5>
+    <h5>Total:   {{order.get_cart_total|floatformat:2}} INR</h5>
+    
+</body>
+
+</html>

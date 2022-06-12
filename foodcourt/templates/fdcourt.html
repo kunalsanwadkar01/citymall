@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive food website design tutorial </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{% static 'css/fdstyle.css' %}">
+    
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="{% url 'landingpage' %}" class="logo"><i class="fas fa-utensils"></i>City Mall</a>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#speciality">speciality</a>
+        <a href="#popular">With US</a>
+        <!-- <a href="#gallery">gallery</a> -->
+        
+        {% comment %} <a href="#order">Reach Us</a> {% endcomment %}
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+<div class="container-fluid slidefood">
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>food made with love</h3>
+        <p> Food chains complement both, entertainment and shopping! We know you love to tantalise the foodie in you, maybe that’s why food brands always catch your attention. Hence, we have a wide spectrum of excellent food outlets, so you can have a scrumptious meal every time you are here to shop or hang out.</p>
+        <a href="#popular" class="btn">order now</a>
+    </div>
+
+    <div class="image">
+        <img src="{% static 'fdimages/home-img.png' %}" alt="">
+    </div>
+
+</section>
+</div>
+
+<div class="container-fluid slidefood">
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>food made with love</h3>
+        <p> Food chains complement both, entertainment and shopping! We know you love to tantalise the foodie in you, maybe that’s why food brands always catch your attention. Hence, we have a wide spectrum of excellent food outlets, so you can have a scrumptious meal every time you are here to shop or hang out.</p>
+        <a href="#" class="btn">order now</a>
+    </div>
+
+    <div class="image">
+        <img src="{% static 'fdimages/home-img2.png' %}" alt="">
+    </div>
+
+</section>
+</div>
+
+<!-- home section ends -->
+
+<!-- speciality section starts  -->
+
+<section class="speciality" id="speciality">
+
+    <h1 class="heading"> our <span>speciality</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img class="image" src="{% static 'fdimages/s-img-1.jpg' %}" alt="">
+            <div class="content">
+                <img src="images/s-1.png" alt="">
+                <h3>tasty burger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="{% static 'fdimages/s-img-2.jpg' %}" alt="">
+            <div class="content">
+                <img src="images/s-2.png" alt="">
+                <h3>tasty pizza</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="{% static 'fdimages/s-img-3.jpg' %}" alt="">
+            <div class="content">
+                <img src="images/s-3.png" alt="">
+                <h3>cold ice-cream</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="{% static 'fdimages/s-img-4.jpg' %}" alt="">
+            <div class="content">
+                <img src="images/s-4.png" alt="">
+                <h3>cold drinks</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="{% static 'fdimages/s-img-5.jpg' %}" alt="">
+            <div class="content">
+                <img src="images/s-5.png" alt="">
+                <h3>tasty sweets</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="{% static 'fdimages/s-img-6.jpg' %}" alt="">
+            <div class="content">
+                <img src="images/s-6.png" alt="">
+                <h3>healty breakfast</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- speciality section ends -->
+
+<!-- popular section starts  -->
+
+<section class="popular" id="popular">
+
+    <h1 class="heading"> With <span>Us</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <!-- <span class="price"> $5 - $20 </span> -->
+            <a href="https://www.mcdelivery.co.in/home" target="blank"><img src="{% static 'fdimages/mcd.png' %}" alt=""></a>
+            <h3>Mc Donalds</h3>
+            
+            <!-- <a href="#" class="btn">order now</a> -->
+        </div>
+        <div class="box">
+            
+            <a href="https://online.kfc.co.in/menu" target="blank"><img src="{% static 'fdimages/kfc.png' %}" alt=""></a> 
+            <h3>KFC</h3>
+           
+            
+        </div>
+        <div class="box">
+            
+            <a href="https://www.burgerking.in/" target="blank"><img src="{% static 'fdimages/burgerking.png' %}" alt=""></a>
+            <h3>Burger King</h3>
+            
+            
+        </div>
+        <div class="box">
+            
+            <a href="https://www.starbucks.in/" target="blank"><img src="{% static 'fdimages/starbucks.png' %}" alt=""></a>
+            <h3>Starbucks</h3>
+            
+        </div>
+        <div class="box">
+            
+            <a href="https://www.pizzahut.co.in/?utm_source=google&utm_medium=cpc&utm_campaign=iP_Sapphire_Search_PR_Brand_Exact&utm_content=Brand&gclid=Cj0KCQjwkbuKBhDRARIsAALysV7o1nKBDcWt-SB8--VnaqOHMFKYBOXkq3zrJECcsDUXn6n4fGi9ZvsaArp6EALw_wcB" target="blank"><img src="{% static 'fdimages/pizzahut.png' %}"  alt=""></a>
+            <h3>Pizza Hut</h3>
+            
+        </div>
+        <div class="box">
+            
+            <a href="https://www.naturalicecreams.in/" target="_blank"><img src="{% static 'fdimages/naturals.png' %}" alt=""></a>
+            <h3>Naturals</h3>
+            
+        </div>
+        <div class="box">
+            
+            <a href="https://www.subway.com/en-IN" target="_blank"><img src="{% static 'fdimages/subway.png' %}" alt=""></a>
+            <h3>Subway</h3>
+            
+        </div>
+        <div class="box">
+            
+            <a href="https://www.dominos.co.in/" target="_blank"><img src="{% static 'fdimages/dominoz.png' %}" alt=""></a>
+            <h3>Domino's</h3>
+            
+        </div>
+        <div class="box">
+            
+            <a href="https://www.cafecoffeeday.com/" target="_blank"><img src="{% static 'fdimages/ccd.png' %}" alt=""></a>
+            <h3>Cafe Coffee Day</h3>
+            
+        </div>
+
+    </div>
+
+</section>
+
+<!-- popular section ends -->
+
+<!-- steps section starts  -->
+
+<!-- <div class="step-container">
+
+    <h1 class="heading">how it <span>works</span></h1>
+
+    <section class="steps">
+
+        <div class="box">
+            <img src="images/step-1.jpg" alt="">
+            <h3>choose your favorite food</h3>
+        </div>
+        <div class="box">
+            <img src="images/step-2.jpg" alt="">
+            <h3>free and fast delivery</h3>
+        </div>
+        <div class="box">
+            <img src="images/step-3.jpg" alt="">
+            <h3>easy payments methods</h3>
+        </div>
+        <div class="box">
+            <img src="images/step-4.jpg" alt="">
+            <h3>and finally, enjoy your food</h3>
+        </div>
+    
+    </section>
+
+</div> -->
+
+<!-- steps section ends -->
+
+<!-- gallery section starts  -->
+
+<!-- <section class="gallery" id="gallery">
+
+    <h1 class="heading"> our food <span> gallery </span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/g-1.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-2.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-3.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-4.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-5.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-6.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-7.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-8.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-9.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+
+    </div>
+
+</section> -->
+
+<!-- gallery section ends -->
+
+
+
+<!-- order section starts  -->
+
+{% comment %} <section class="order" id="order">
+
+    <h1 class="heading"> <span>Reach</span> Us </h1>
+
+    <div class="row">
+        
+        <div class="image">
+            <img src="{% static 'fdimages/order-img.jpg' %}" alt="">
+        </div>
+
+        <form action="" method="POST" id="contactform">
+
+            <div class="inputBox">
+                <input type="text" placeholder=" first name" id="firstname">
+                <input type="text" placeholder="last name" id="lastname">
+            </div>
+
+            <div class="inputBox">
+                <input type="number" placeholder="contact number" id="contnumber">
+                <input type="email" placeholder="email" id="emailadd">
+            </div>
+
+            <textarea placeholder="message" name="" id="message" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="submit" class="btn">
+
+        </form>
+
+    </div>
+
+</section> {% endcomment %}
+
+<!-- order section ends -->
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <!-- <div class="share">
+        <a href="#" class="btn">facebook</a>
+        <a href="#" class="btn">twitter</a>
+        <a href="#" class="btn">instagram</a>
+        <a href="#" class="btn">pinterest</a>
+        <a href="#" class="btn">linkedin</a>
+    </div> -->
+
+    <h1 class="credit"> All Images and Media used are for <span> Fair Use Only ! </span> <br> For Educational Purpose Only </h1>
+
+</section>
+
+<!-- scroll top button  -->
+<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+<!-- loader  -->
+<div class="loader-container">
+    <img src="{% static 'fdimages/fdloader.gif' %}" alt="">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="{% static 'js/fdscript.js' %}"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>  
+
+
+</body>
+</html>
