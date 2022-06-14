@@ -1,1 +1,1 @@
-web: gunicorn CITYMALL.wsgi --log-file -
+web gunicorn CITYMALL.wsgi:application --log-file -
